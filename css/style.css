@@ -1,0 +1,104 @@
+@import url(https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;800;900&display=swap);
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  width: 100%;
+  scroll-behavior: smooth;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+  background-color: darkseagreen;
+
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.main {
+  flex-grow: 1;
+
+}
+
+.modal {
+  padding-top: 50px;
+}
+
+.modal-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.button {
+  border: 2px solid #3abf43;
+  padding: 15px;
+  border-radius: 20px;
+  background-color: darkcyan;
+  color: #fff;
+  cursor: pointer;
+}
+
+.modal-box {
+  position: fixed;
+  z-index: 1000;
+  width: 100%;
+  max-width: 700px;
+  margin-top: 170px;
+  margin-left: auto;
+  margin-right: auto;
+  display: none;
+  flex-direction: column;
+  background-color: lightgoldenrodyellow;
+  border-radius: 20px;
+  padding: 20px;
+  box-shadow: 2px 1px 22px 5px rgba(0, 0, 0, 0.76);
+  -webkit-box-shadow: 2px 1px 22px 5px rgba(0, 0, 0, 0.76);
+  -moz-box-shadow: 2px 1px 22px 5px rgba(0, 0, 0, 0.76);
+
+}
+
+.close {
+  background-color: transparent;
+  border: none;
+  font-size: 25px;
+  position: absolute;
+  top: 0%;
+  right: 2%;
+  cursor: pointer;
+}
+
+.overlay{
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(5px);
+}
+
+.modal-info {}
+
+.title {
+  margin-bottom: 15px;
+}
+
+.text {}
